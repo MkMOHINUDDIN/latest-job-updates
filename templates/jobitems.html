@@ -1,0 +1,26 @@
+<div class="mb-4 border-bottom row" style="padding-bottom: 8px;">
+    <div class="col-9">
+        <h4 style="color:darkgoldenrod; margin-bottom: 4px;">{{job['title']}}</h4>
+        <div><b>Location: </b>
+            {{job['Location']|safe}}
+        </div>
+        <div><b>Qualification: </b>
+            {{job['qualification']|safe}}
+        </div>
+        <div><b>Experience: </b>
+            {{job['Experience']|safe}}
+        </div>
+        <div><b>Batch: </b>
+            {{job['Batch']|safe}}
+        </div>
+        {% if 'package' in job%}
+        <div><b>Package: </b>
+            {{job['package']|safe}}
+        </div>
+        {%endif%}
+    </div>
+    <div class="col-3">
+        <button type="button" class="btn btn-outline-primary">Apply</button>
+    </div>
+
+</div>

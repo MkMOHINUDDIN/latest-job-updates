@@ -17,14 +17,21 @@
     </head>
     <body>
         <div class="container">
-            <h1 class="text-center mt-2 mb-4">MOBASA CAREERS</h1>
+            <h1 class="text-center mt-2 mb-4">{{company_name}} CAREERS (Under Development) </h1>
             <img id = 'banner' class="img-fluid" src='/static/banner3.jpg'>
             <h2 class="text-center mt-2 mb-4">About MOBASA</h2>
             <p class="lead">Mombasa Tech Solutions Ltd is a dynamic and innovative technology company based in Mombasa, Kenya. Founded in [insert year], the company has quickly gained a reputation for providing cutting-edge technological solutions to businesses and organizations in the region. With a strong commitment to excellence and a customer-centric approach, Mombasa Tech Solutions has become a trusted partner for clients seeking to leverage technology for their growth and success.                
                 Mombasa Tech Solutions is not only known for its technical expertise but also for its emphasis on fostering long-term relationships with clients, ensuring their continued success in an increasingly digital world. As a forward-thinking tech company, Mombasa Tech Solutions is poised to play a pivotal role in driving technological advancements in the region.</p>
 
                 <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-                <p>todo</p>
+                <p>
+                    <div>
+                        {%for job in jobs%}
+                        {%include 'jobitems.html'%}
+                        {%endfor%}
+
+                    </div>
+                </p>
                 <div class="text-center">
                     <button class="btn btn-primary btn-lg">Contact Us</button>
                     <p class="mt-2 mb-4">Copyright 2023</p>
