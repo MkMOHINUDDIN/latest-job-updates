@@ -1,5 +1,5 @@
 <div class="mb-4 border-bottom row" style="padding-bottom: 8px;">
-    <div class="col-9">
+    <div class="col-10">
         <h4 style="color:darkgoldenrod; margin-bottom: 4px;">{{job['title']}}</h4>
         <div><b>Location: </b>
             {{job['Location']|safe}}
@@ -24,8 +24,8 @@
         </div>
         {%endif%}
     </div>
-    <div class="col-3">
-        <button type="button" class="btn btn-outline-primary">Apply</button>
+    <div class="col-2 padding-right:16px">
+        <a href="mailto:maniyarmohinuddin@gmail.com?subject=Application%20for%20{{job['title']}}%20at%20{{company_name}}" type="button" class="btn btn-outline-primary">Apply</a>
     </div>
 
 </div>
