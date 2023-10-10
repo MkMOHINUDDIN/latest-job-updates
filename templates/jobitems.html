@@ -18,6 +18,11 @@
             {{job['package']|safe}}
         </div>
         {%endif%}
+        {% if 'Last date to apply' not in job%}
+        <div><b>Last date to apply: </b>ASAP
+            
+        </div>
+        {%endif%}
     </div>
     <div class="col-3">
         <button type="button" class="btn btn-outline-primary">Apply</button>
